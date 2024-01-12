@@ -1,16 +1,4 @@
-#front-end -> user interface / user experience
-#back-end -> program logic
-#framework -> conjunto de ferramentas para facilitar o desenvolvimento
-#flet -> biblioteca para criar interfaces gráficas com o python em qualquer sistema operacional (multiplataforma).
-
-#Titulo  do programa "FaiscaZap"
-#Botao de Iniciar Chat
-    # Pop up
-    # Bem vindo ao FasicaZap
-    # Escreva seu nome
-#Chat
-    # Escreva sua mensagem
-    # Botao de enviar   
+ 
 
 import flet as ft
 
