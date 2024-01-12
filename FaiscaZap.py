@@ -1,11 +1,23 @@
- 
+#front-end -> user interface / user experience
+#back-end -> program logic
+#framework -> conjunto de ferramentas para facilitar o desenvolvimento
+#flet -> biblioteca para criar interfaces gráficas com o python em qualquer sistema operacional (multiplataforma).
+
+#Titulo  do programa "FaiscaZap"
+#Botao de Iniciar Chat
+    # Pop up
+    # Bem vindo ao FasicaZap
+    # Escreva seu nome
+#Chat
+    # Escreva sua mensagem
+    # Botao de enviar   
 
 import flet as ft
 
 def main(pagina):
-    
+    pagina.vertical_alignment = ft.MainAxisAlignment.CENTER
+    pagina.horizontal_alignment = ft.CrossAxisAlignment.CENTER
     titulo = ft.Text("FaíscaZap")
-
     nome_usuario = ft.TextField(label="Digite seu nome")
     chat = ft.Column()
 
@@ -29,6 +41,8 @@ def main(pagina):
         popup.open = False #fechar o popup
         pagina.remove(botao_iniciar) #tirar o inciar da tela
         pagina.add(chat)
+        pagina.vertical_alignment = ft.MainAxisAlignment.NONE
+        pagina.horizontal_alignment = ft.CrossAxisAlignment.NONE
         linha_mensagem = ft.Row([campo_mensagem, botao_enviar])
         pagina.add(linha_mensagem)
         texto = f"{nome_usuario.value} entrou no chat"
@@ -55,6 +69,6 @@ def main(pagina):
     pagina.add(titulo)
     pagina.add(botao_iniciar)
 
-ft.app(main)
-#ft.app(main, view=ft.WEB_BROWSER)
+#ft.app(main)
+ft.app(main, view=ft.WEB_BROWSER)
     
