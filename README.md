@@ -1,1 +1,1 @@
-# Chat project using Python "
+# Chat project using Python  *"
